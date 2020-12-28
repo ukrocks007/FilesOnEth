@@ -1,0 +1,65 @@
+[{
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "inputs": [{
+                "internalType": "string",
+                "name": "Name",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "Email",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "File",
+                "type": "string"
+            }
+        ],
+        "name": "addCitizen",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "admin",
+        "outputs": [{
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+        }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+        }],
+        "name": "citizens",
+        "outputs": [{
+                "internalType": "string",
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "email",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "file",
+                "type": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
