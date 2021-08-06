@@ -13,14 +13,48 @@
                 "internalType": "string",
                 "name": "Email",
                 "type": "string"
-            },
-            {
-                "internalType": "string",
-                "name": "File",
-                "type": "string"
             }
         ],
         "name": "addCitizen",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [{
+                "internalType": "string",
+                "name": "Email",
+                "type": "string"
+            },
+            {
+                "internalType": "int256",
+                "name": "length",
+                "type": "int256"
+            }
+        ],
+        "name": "addFile",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [{
+                "internalType": "string",
+                "name": "Email",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "index",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "data",
+                "type": "string"
+            }
+        ],
+        "name": "addFileData",
         "outputs": [],
         "stateMutability": "nonpayable",
         "type": "function"
@@ -52,13 +86,44 @@
                 "internalType": "string",
                 "name": "email",
                 "type": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+        }],
+        "name": "files",
+        "outputs": [{
+            "internalType": "int256",
+            "name": "length",
+            "type": "int256"
+        }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{
+                "internalType": "string",
+                "name": "Email",
+                "type": "string"
             },
             {
                 "internalType": "string",
-                "name": "file",
+                "name": "index",
                 "type": "string"
             }
         ],
+        "name": "getFileData",
+        "outputs": [{
+            "internalType": "string",
+            "name": "data",
+            "type": "string"
+        }],
         "stateMutability": "view",
         "type": "function"
     }
